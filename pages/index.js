@@ -1,27 +1,24 @@
 import { Box } from '@chakra-ui/react'
-import { motion } from 'framer-motion'
+import { motion, useMotionValue, useTransform } from "framer-motion"
+import Gradu from '../components/Props/gradu'
 
 const MotionBox = motion(Box)
 
 function Home() {
-    const list = { hidden: { opacity: 0 } }
-    const item = { hidden: { x: -10, opacity: 0 } }
     return (
-        <MotionBox
-            variants={list}
+        <Box m={[2, 3]}>
+            <MotionBox
             height='100px'
             bg='green.300'
             drag='x'
-            dragConstraints={{ left: -500, right: 150 }}
+            dragConstraints={{ left: -100, right: 100 }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            >
-            <motion.li variants={item}   />
-            <motion.li variants={item} />
-            <motion.li variants={item} />
-            </MotionBox>
-            
-        
+        >
+                <Box textStyle='h1' m={[2, 3]} p={25} pl={650}>Text</Box>
+        </MotionBox>
+                <Gradu/>
+        </Box>
     )
 }
 export default Home;
