@@ -9,11 +9,11 @@ const MotionBox = motion(Box)
 
 function Home() {
     return (
-        <Box bg='' height='100'>
+        <Box bg='tomato' height='1000' border='10px' borderColor='green.200'>
             <MotionBox
             zIndex={1}
             height='100px'
-            bg='tomato'
+            bg='red'
             drag='x'
             dragConstraints={{ left: -100, right: 100 }}
             whileHover={{ scale: 1.1 }}
@@ -25,11 +25,11 @@ function Home() {
             <Box
                 bgImage="url('../components/assets/sample.jpg')"
                 bgPosition="center"
-                bgRepeat="no-repeat"
+                // bgRepeat="no-repeat"
                 width={100}
                 height={100}
             >
-     <Text>Image is being seen </Text>
+                <Text>Image is being seen </Text>
                 </Box>
             <Image
                 src={sample}
@@ -38,7 +38,10 @@ function Home() {
             // height={500} automatically provided
             // blurDataURL="data:..." automatically provided
             // placeholder="blur" // Optional blur-up while loading
-            />
+            />    
+            <Box border='1px' width={300} height={300} borderColor='gray.200'>
+                Card
+            </Box>
         </Box>
     )
 }
