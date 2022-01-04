@@ -2,8 +2,8 @@ import { Box, Text } from '@chakra-ui/react'
 import { motion } from "framer-motion"
 import Image from 'next/image'
 import Gradu from '../components/Props/gradu'
-import Gridu from '../components/Props/gridu'
 import sample from '../components/assets/sample.jpg'
+import Shadu from '../components/Props/shadu'
 
 const MotionBox = motion(Box)
 
@@ -42,6 +42,7 @@ function Home() {
             <Box border='1px' width={300} height={300} borderColor='gray.200'>
                 Card
             </Box>
+         <Shadu/>
         </Box>
     )
 }
