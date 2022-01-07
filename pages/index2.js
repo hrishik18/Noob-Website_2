@@ -1,11 +1,11 @@
-import { Box } from "@chakra-ui/react"
+import { Box,Flex } from "@chakra-ui/react"
 
 export default function index2() {
     return (
         <header>
-            <Box d="flex" alignItems="center" justifyContent="space-between">
-
-            </Box>
+            <Flex align="center" justify="center">
+                Flex Container
+            </Flex>
         </header>        
     )
 }
