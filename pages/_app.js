@@ -1,6 +1,14 @@
 import { ChakraProvider } from '@chakra-ui/react'
-
+import { mode } from '@chakra-ui/theme-tools'
 import { extendTheme } from '@chakra-ui/react'
+
+const styles = {
+    global: props => ({
+        body: {
+            bg: mode('#2D3748', '#202023ls')(props)
+        }
+    })
+}
 
 const colors = {
     brand: {
@@ -24,7 +32,7 @@ const colors = {
         },
     },
 }
-const theme = extendTheme({ colors })
+const theme = extendTheme({ colors,styles })
 
 function MyApp({ Component, pageProps }) {
     return (

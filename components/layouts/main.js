@@ -2,18 +2,18 @@ import Head from 'next/head'
 import {Box, Container} from '@chakra-ui/react'
 
 
-const main = ({children,router}) => {
+const Layout = ({children,router}) => {
     return (
-        <Box as="main" pb={8}>
+        <Box as="Layout">
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <Title>Home Page</Title>
+                Home Page
             </Head>
-            <Container maxW="container.md" pt={14}>
+            <Container maxW="container.md">
               {children}
             </Container>
         </Box>
     )
 }
 
-export default main;
+export default Layout;
