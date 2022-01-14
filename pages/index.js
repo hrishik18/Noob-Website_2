@@ -1,29 +1,30 @@
-import { Box, Flex, Container, Image, useColorModeValue } from '@chakra-ui/react'
-import { createBreakpoints } from '@chakra-ui/theme-tools'
+import { Box, Flex, Container, Image, useColorModeValue,Heading,
+     Spacer,Text } from '@chakra-ui/react'
 import Layout from '../components/layouts/main'
 
-const breakpoints = createBreakpoints({
-    sm: '30em',
-    md: '48em',
-    lg: '62em',
-    xl: '80em',
-    '2xl': '96em',
-})
 function Home() {
     return (
        <Layout>
             <Container>             
-              <Flex>
-                    <Image
-                        borderColor="whiteAlpha.800"
-                        borderWidth={2}
-                        borderStyle="solid"
-                        maxWidth="100px"
-                        display="inline-block"
-                        borderRadius="full"
-                        src="me.png"
-                        alt="Profile image"
-                    />
+              <Flex align="center" justify="space-evenly">
+                  <Box>
+                        <Image
+                            borderColor="whiteAlpha.800"
+                            borderWidth={2}
+                            borderStyle="solid"
+                            maxWidth="100px"
+                            borderRadius="full"
+                            src="me.png"
+                            alt="Profile image"
+                        />
+                  </Box>
+                    
+                    <Spacer/>
+                    <Box>
+                        <Heading as="h1" variant="page-title">
+                           Hrishik Sancheti 
+                        </Heading>
+                    </Box>
                     </Flex>  
             </Container>
        </Layout>
