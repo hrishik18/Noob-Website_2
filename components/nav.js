@@ -2,18 +2,17 @@ import React from 'react'
 import {Box, Flex, Button,  useColorMode, useColorModeValue} from '@chakra-ui/react'
 import NextLink from 'next/link'
 import styled from '@emotion/styled'
-
 import DarkModeSwitch from '../components/Dmswitch'
 
 const Nav = ({ children }) => {
-    const { colorMode } = useColorMode()
 
     const StickyNav = styled(Flex)`
         position: sticky;
-        z-index: 10;
+        z-index: 3;
         top: 0;
-        backdrop-filter: saturate(180%) blur(50px);
+        backdrop-filter: blur(10px);
         transition: height .5s, line-height .5s;
+        color:undefined
         `
 
     return (
@@ -33,7 +32,7 @@ const Nav = ({ children }) => {
             >
                 <Box>
                     <NextLink href="/" passHref>
-                        <Button as="a" variant="ghost" p={[1, 2, 4]} _hover={{ backgroundColor: useColorModeValue('gray.600','gray.300') }}>
+                        <Button as="a" variant="ghost" p={[1, 2, 4]} _hover={{ backgroundColor: useColorModeValue('#B2F5EA','gray.300') }}>
                             Home
                         </Button>
                     </NextLink>
