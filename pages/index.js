@@ -1,7 +1,8 @@
 import { Box, Flex, Container, Image, useColorModeValue,Heading,
-     Spacer,Text } from '@chakra-ui/react'
+     Spacer,Text,Stack } from '@chakra-ui/react'
 import Layout from '../components/layouts/main'
 import Nav from '../components/Nav'
+import Paragraph from '../components/para'
 
 function Home() {
     return (
@@ -23,21 +24,30 @@ function Home() {
                     <Spacer/>
                     <Box>
                         <Heading as="h1">
-                            <Text
+                            <Text p={5} mb={[1,2,4]}
                             color={useColorModeValue('#1A365D','black')}>
                                 Hrishik Sancheti </Text> 
                         </Heading>
                     </Box>
                     </Flex>  
-                <Box
-                    borderRadius="lg"
-                    mb={6}
-                    p={3}
-                    textAlign="center"
-                    bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+                    <Stack>
+                      <Box
+                    variant='abc'
+                        textAlign='center' 
+                        borderRadius='lg'  
                 >
                    About me 
                 </Box>
+                <Paragraph>
+                    I am a Second year Computer Science Engg. I am ready to accept challenges
+                        and my improve myself in everyway possible would love to work with a highly
+                        esteemed company.
+                        Applying for interships as this will give me the platform to utilize and enhance
+                        my technical skills for mutual growth and benefit of the company.
+                </Paragraph>
+                    </Stack>
+                
+
             </Container>
        </Layout>
     )

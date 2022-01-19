@@ -29,6 +29,11 @@ const Nav = ({ children }) => {
                 py={2}
                 mb={[0, 0, 8]}
                 mx="auto"
+                transition="all 200ms ease"
+                _hover={
+                  boxShadow="md",
+                  transform="scale(1.02)"
+                }
             >
                 <Box>
                     <NextLink href="/" passHref>
