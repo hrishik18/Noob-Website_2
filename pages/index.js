@@ -17,7 +17,7 @@ function Home() {
                             maxH={200}
                             display="block"
                             borderRadius="full"
-                            src="me.png"
+                            src="me2.png"
                             alt="Profile image"
                         />
                   </Box>  
@@ -45,6 +45,17 @@ function Home() {
                         Applying for interships as this will give me the platform to utilize and enhance
                         my technical skills for mutual growth and benefit of the company.
                 </Paragraph>
+                    <Box>
+                        <Box
+                            variant='abc'
+                            textAlign='center'
+                            borderRadius='lg'
+                        >
+                            Blogs
+                        </Box>
+                        <Text as='h1' >Coming Soon!!!</Text>
+                    </Box>
+                        
                     </Stack>
                 
 
