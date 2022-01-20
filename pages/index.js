@@ -1,8 +1,7 @@
 import { Box, Flex, Container, Image, useColorModeValue,Heading,
      Spacer,Text,Stack } from '@chakra-ui/react'
 import Layout from '../components/layouts/main'
-import Nav from '../components/Nav'
-import Paragraph from '../components/para'
+import Paragraph from '../components/para'      
 
 function Home() {
     return (
@@ -45,6 +44,14 @@ function Home() {
                         Applying for interships as this will give me the platform to utilize and enhance
                         my technical skills for mutual growth and benefit of the company.
                 </Paragraph>
+                    <Box
+                        variant='abc'
+                        textAlign='center'
+                        borderRadius='lg'
+                    >
+                        I love
+                    </Box>
+                    <Text as='h1' >To be filled!!</Text>
                     <Box>
                         <Box
                             variant='abc'
@@ -55,7 +62,16 @@ function Home() {
                         </Box>
                         <Text as='h1' >Coming Soon!!!</Text>
                     </Box>
-                        
+                    <Box>
+                        <Box
+                            variant='abc'
+                            textAlign='center'
+                            borderRadius='lg'
+                        >
+                            Projects
+                        </Box>
+                        <Text as='h1' >Needs to be added</Text>
+                    </Box>
                     </Stack>
                 
 
