@@ -1,10 +1,10 @@
 import { ChakraProvider } from '@chakra-ui/react'
-import theme from '../lib/theme'
+import ctheme from '../lib/theme'
 
 
 function MyApp({ Component, pageProps }) {
     return (
-        <ChakraProvider theme={theme}>
+        <ChakraProvider theme={ctheme}>
             <Component {...pageProps} />
         </ChakraProvider>
     )
