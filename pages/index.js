@@ -1,10 +1,9 @@
 import {
     Box, Flex, Container, Image, useColorModeValue, Heading,
-    Spacer, Text, Stack, Button
+    Spacer, Text, Stack, Button, List,ListItem
 } from '@chakra-ui/react'
 import Layout from '../components/layouts/main'
 import Paragraph from '../components/para'
-
 
 function Home() {
     return (
@@ -43,11 +42,9 @@ function Home() {
                         About me
                     </Box>
                     <Paragraph>
-                        I am a Second year Computer Science Engg. I am ready to accept challenges
-                        and my improve myself in everyway possible would love to work with a highly
-                        esteemed company.
-                        Applying for interships as this will give me the platform to utilize and enhance
-                        my technical skills for mutual growth and benefit of the company.
+                        I am a Second year Computer Science Engineering Student at K.J Somaiya. I want to be the best of myself.
+                        I always have the want to dig at new things and master them. I believe in my own hardwork, the way and the results.
+                        I am currently intrested in web, app dev and Cyber Security.  
                     </Paragraph>
                     <Box
                         mb={6}
@@ -58,7 +55,36 @@ function Home() {
                     >
                         I love
                     </Box>
-                    <Text as='h1' >To be filled!!</Text>
+                    <List spacing={3}>
+                        <ListItem>
+                            <Box display={{ md: 'flex' }}>
+                                <Image
+                                    src="https://img.icons8.com/wired/64/000000/1-circle.png"
+                                    alt="1"
+                                    width={25}
+                                    height={25}
+                                    m={2}
+                                    textAlign="center"
+                                />
+                                <Text
+                                mt={1}><span>Anime: fav include One piece, Demon slayer, Classroom of elite....</span></Text>
+                            </Box>
+                        </ListItem>
+                        <ListItem>
+                            <Box display={{ md: 'flex' }}>
+                                <Image
+                                    src="https://img.icons8.com/wired/64/000000/2-circle.png"
+                                    alt="2"
+                                    width={25}
+                                    height={25}
+                                    m={2}
+                                    textAlign="center"
+                                />
+                                <Text
+                                    mt={1}><span>Music: From Pop to Classical, Rock to Country ,Love it all</span></Text>
+                            </Box>
+                        </ListItem>
+                    </List>
                     <Box>
                         <Box
                             mb={6}
