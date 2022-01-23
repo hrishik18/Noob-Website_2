@@ -1,9 +1,13 @@
 import {
     Box, Flex, Container, Image, useColorModeValue, Heading,
-    Spacer, Text, Stack, Button, List,ListItem
+    Spacer, Text, Stack, UnorderedList, List, ListItem
 } from '@chakra-ui/react'
 import Layout from '../components/layouts/main'
 import Paragraph from '../components/para'
+import { FadeEx } from '../components/fadex'
+import { useDisclosure } from '@chakra-ui/react'
+
+
 
 function Home() {
     return (
@@ -24,8 +28,11 @@ function Home() {
                     </Box>
                     <Spacer />
                     <Box>
-                        <Heading as="h1">
-                            <Text p={5} mb={[1, 2, 4]}
+                        <Heading >
+                            <Text
+                                textStyle='h2'
+                                p={5}
+                                mb={[1, 2, 4]}
                                 color={useColorModeValue('#1A365D', 'black')}>
                                 Hrishik Sancheti </Text>
                         </Heading>
@@ -44,7 +51,7 @@ function Home() {
                     <Paragraph>
                         I am a Second year Computer Science Engineering Student at K.J Somaiya. I want to be the best of myself.
                         I always have the want to dig at new things and master them. I believe in my own hardwork, the way and the results.
-                        I am currently intrested in web, app dev and Cyber Security.  
+                        I am currently intrested in web, app dev and Cyber Security.
                     </Paragraph>
                     <Box
                         mb={6}
@@ -53,38 +60,32 @@ function Home() {
                         textAlign="center"
                         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
                     >
-                        I love
+                        I like
                     </Box>
-                    <List spacing={3}>
-                        <ListItem>
+                    <UnorderedList spacing={3}>
+                        <ListItem ml={10} p={[2,2,4]}>
                             <Box display={{ md: 'flex' }}>
-                                <Image
-                                    src="https://img.icons8.com/wired/64/000000/1-circle.png"
-                                    alt="1"
-                                    width={25}
-                                    height={25}
-                                    m={2}
-                                    textAlign="center"
-                                />
                                 <Text
-                                mt={1}><span>Anime: fav include One piece, Demon slayer, Classroom of elite....</span></Text>
+                                color='red.300'
+                                    textStyle="h3"
+                                    as='u'
+                                    mt={1}>Anime </Text>          
+                            </Box>
+                            <Text
+                            color='purple.400'
+                                p={[2, 2, 4]} textStyle="h3">
+                                One piece, Demon slayer,
+                                Classroom of elite....
+                            </Text>
+                        </ListItem>
+                        <ListItem ml={10} p={[2, 2, 4]}>
+                            <Box display={{ md: 'flex' }} >
+                                <Text textStyle="h3"   
+                                    mt={1}>
+                                    <span>Music: From Pop to Classical, Rock to Country ,Love it all</span></Text>
                             </Box>
                         </ListItem>
-                        <ListItem>
-                            <Box display={{ md: 'flex' }}>
-                                <Image
-                                    src="https://img.icons8.com/wired/64/000000/2-circle.png"
-                                    alt="2"
-                                    width={25}
-                                    height={25}
-                                    m={2}
-                                    textAlign="center"
-                                />
-                                <Text
-                                    mt={1}><span>Music: From Pop to Classical, Rock to Country ,Love it all</span></Text>
-                            </Box>
-                        </ListItem>
-                    </List>
+                    </UnorderedList>
                     <Box>
                         <Box
                             mb={6}
