@@ -1,9 +1,10 @@
 import {
     Box, Flex, Container, Image, useColorModeValue, Heading,
-    Spacer, Text, Stack, UnorderedList, List, ListItem
+    Spacer, Text, Stack, UnorderedList, ListItem, SimpleGrid
 } from '@chakra-ui/react'
 import Layout from '../components/layouts/main'
 import Paragraph from '../components/para'
+import { Card } from '../components/Card'
 import { FadeEx } from '../components/fadex'
 import { useDisclosure } from '@chakra-ui/react'
 
@@ -92,7 +93,12 @@ function Home() {
                         >
                             Blogs
                         </Box>
-                        <Text as='h1' >Coming Soon!!!</Text>
+                        <SimpleGrid columns={[1, 2, 2]} gap={6}>                            
+                            <Card title={"Hashing of Different types"} CrdImg="hash.png" ></Card>
+                            <Card title={"Burpsite Walk though "} CrdImg="hash.jpg" ></Card>
+                            <Card title={"The is an example text to see how the card fits the overflowing and a long sentense i hope this works out somehow , keep your finger crossed "} CrdImg="hash.png" ></Card>
+                        </SimpleGrid>
+                        
                     </Box>
                     <Box>
                         <Box

@@ -6,7 +6,7 @@ const Paragraph = styled.p`
   color: "white";
   text-indent: 1em;
   background:"#2A4365";
-  font-size: 25px;
+  font-size: 23px;
   font-weight:semibold;
   font-family: 'Neonderthaw'
 `
