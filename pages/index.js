@@ -69,20 +69,16 @@ function Home() {
                                 color='red.300'
                                     textStyle="h3"
                                     as='u'
-                                    mt={1}>Anime </Text>          
+                                    mt={1}>ANIME</Text>          
                             </Box>
-                            <Text
-                            color='purple.400'
-                                p={[2, 2, 4]} textStyle="h3">
-                                One piece, Demon slayer,
-                                Classroom of elite....
-                            </Text>
                         </ListItem>
                         <ListItem ml={10} p={[2, 2, 4]}>
                             <Box display={{ md: 'flex' }} >
-                                <Text textStyle="h3"   
-                                    mt={1}>
-                                    <span>Music: From Pop to Classical, Rock to Country ,Love it all</span></Text>
+                                <Text
+                                    color='blue.300'
+                                    textStyle="h3"
+                                    as='u'
+                                    mt={1}>MUSIC </Text> 
                             </Box>
                         </ListItem>
                     </UnorderedList>
