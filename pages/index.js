@@ -3,8 +3,8 @@ import {
     Spacer, Text, Stack, UnorderedList, ListItem, SimpleGrid
 } from '@chakra-ui/react'
 import Layout from '../components/layouts/main'
+import { Skill } from '../components/TP_skills'
 import Paragraph from '../components/para'
-import { Card } from '../components/Card'
 import { FadeEx } from '../components/fadex'
 import { useDisclosure } from '@chakra-ui/react'
 
@@ -82,7 +82,25 @@ function Home() {
                                     mt={1}>MUSIC </Text> 
                             </Box>
                         </ListItem>
-                    </UnorderedList>
+                        <ListItem ml={10} p={[2, 2, 4]}>
+                            <Box display={{ md: 'flex' }}>
+                                <Text
+                                    color='red.300'
+                                    textStyle="h3"
+                                    as='u'
+                                    mt={1}>Guitar</Text>
+                            </Box>
+                        </ListItem>
+                        <ListItem ml={10} p={[2, 2, 4]}>
+                            <Box display={{ md: 'flex' }} >
+                                <Text
+                                    color='blue.300'
+                                    textStyle="h3"
+                                    as='u'
+                                    mt={1}>Football </Text>
+                            </Box>
+                        </ListItem>
+                    </UnorderedList>                   
                     <Box>
                         <Box
                             mb={6}
@@ -91,16 +109,9 @@ function Home() {
                             textAlign="center"
                             bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
                         >
-                            Blogs
+                           SKILLS
                         </Box>
-                        <SimpleGrid columns={[1, 2, 2]} gap={6}>                            
-                            <Card title={"Hashing of Different types"} CrdImg="hash.png" ></Card>
-                            <Card title={"Burpsite Walk though "} CrdImg="hash.jpg" ></Card>
-                            <Card title={"The is an example text to see how the card fits the overflowing and a long sentense i hope this works out somehow , keep your finger crossed "} CrdImg="hash.png" ></Card>
-                        </SimpleGrid>
-                        
-                    </Box>
-                    <Box>
+                         <Skill/>
                         <Box
                             mb={6}
                             borderRadius="lg"
