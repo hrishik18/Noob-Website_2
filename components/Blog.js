@@ -1,7 +1,7 @@
 import { Box, useColorModeValue,SimpleGrid } from "@chakra-ui/react"
 import { Card } from "./Card"
 
-export const Blog = ({ children, title, CrdImg }) => {
+export const Blog = ({ children, title,CrdImg }) => {
     return (
         <Box>
             <Box
@@ -14,9 +14,9 @@ export const Blog = ({ children, title, CrdImg }) => {
                 Blogs
             </Box>
             <SimpleGrid columns={[1, 2, 2]} gap={6}>
-                <Card title={"Hashing of Different types"} CrdImg="hash.png" ></Card>
+                <Card title={"Different Hash Function"} time={"Nov21"} 
+                des={"This blog shows the difference between various Hash functions such as SHAs,MDs"} CrdImg="hash.png" ></Card>
                 <Card title={"Burpsite Walk though "} CrdImg="hash.jpg" ></Card>
-                <Card title={"The is an example text to see how the card fits the overflowing and a long sentense i hope this works out somehow , keep your finger crossed "} CrdImg="hash.png" ></Card>
             </SimpleGrid>
 
         </Box>

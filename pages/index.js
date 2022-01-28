@@ -7,6 +7,8 @@ import { Skill } from '../components/TP_skills'
 import Paragraph from '../components/para'
 import { FadeEx } from '../components/fadex'
 import { useDisclosure } from '@chakra-ui/react'
+import { Blog } from '../components/Blog'
+
 
 
 
@@ -52,9 +54,10 @@ function Home() {
                     <Paragraph>
                         I am a Second year Computer Science Engineering Student at K.J Somaiya. I want to be the best of myself.
                         I always have the want to dig at new things and master them. I believe in my own hardwork, the way and the results.
-                        I am currently intrested in web, app dev and Cyber Security.
+                        I am currently intrested in Web, App dev and Cyber Security.
                     </Paragraph>
-                    <Box
+
+                    {/* <Box
                         mb={6}
                         borderRadius="lg"
                         p={3}
@@ -62,8 +65,8 @@ function Home() {
                         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
                     >
                         I like
-                    </Box>
-                    <UnorderedList spacing={3}>
+                    </Box> */}
+                    {/* <UnorderedList spacing={3}>
                         <ListItem ml={10} p={[2,2,4]}>
                             <Box display={{ md: 'flex' }}>
                                 <Text
@@ -100,7 +103,7 @@ function Home() {
                                     mt={1}>Football </Text>
                             </Box>
                         </ListItem>
-                    </UnorderedList>                   
+                    </UnorderedList>                    */}
                     <Box>
                         <Box
                             mb={6}
@@ -109,10 +112,12 @@ function Home() {
                             textAlign="center"
                             bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
                         >
-                           SKILLS
+                            SKILLS
                         </Box>
-                         <Skill/>
+                        <Skill />
+                        <Blog />
                         <Box
+                            mt={5}
                             mb={6}
                             borderRadius="lg"
                             p={3}
