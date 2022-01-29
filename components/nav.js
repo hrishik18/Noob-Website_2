@@ -1,5 +1,4 @@
-import React from 'react'
-import { Box, Flex, Button, boxShadow, transform, useColorModeValue } from '@chakra-ui/react'
+    import { Box, Flex, Button, boxShadow, transform, useColorModeValue } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import DarkModeSwitch from '../components/Dmswitch'
 
@@ -38,9 +37,9 @@ const Nav = ({ children }) => {
                             Home
                         </Button>
                     </NextLink>
-                    <NextLink href="/blog" passHref>
-                        <Button as="a" variant="solid" p={[1, 2, 4]} _hover={{ backgroundColor: useColorModeValue('gray.600', 'gray.300') }}>
-                            Blog
+                    <NextLink href="/project" passHref>
+                        <Button as="a" variant="ghost" p={[1, 2, 4]} _hover={{ backgroundColor: useColorModeValue('#B2F5EA', 'gray.300') }}>
+                            Projects
                         </Button>
                     </NextLink>
                 </Box>

@@ -7,7 +7,7 @@ import { Skill } from '../components/TP_skills'
 import Paragraph from '../components/para'
 import { FadeEx } from '../components/fadex'
 import { useDisclosure } from '@chakra-ui/react'
-import { Blog } from '../components/Blog'
+import { Blog } from '../components/Bloglist'
 
 
 
@@ -112,21 +112,10 @@ function Home() {
                             textAlign="center"
                             bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
                         >
-                            SKILLS
+                            Tech Stuff 
                         </Box>
                         <Skill />
                         <Blog />
-                        <Box
-                            mt={5}
-                            mb={6}
-                            borderRadius="lg"
-                            p={3}
-                            textAlign="center"
-                            bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-                        >
-                            Projects
-                        </Box>
-                        <Text as='h1' >Needs to be added</Text>
                     </Box>
                 </Stack>
             </Container>
